@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 215" width="460" height="215">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="lang-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090410" />
+      <stop offset="50%" stop-color="#140722" />
+      <stop offset="100%" stop-color="#080310" />
+    </linearGradient>
+
+    <!-- Language Bar Gradients -->
+    <linearGradient id="python-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+
+    <linearGradient id="ts-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <linearGradient id="js-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="web-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e879f9" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <filter id="lang-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Dot Pattern -->
+    <pattern id="lang-dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#a855f7" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #d946ef;
+    }
+    .lang-name {
+      font-family: 'Segoe UI', -apple-system, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      fill: #f3e8ff;
+    }
+    .lang-pct {
+      font-family: 'Consolas', 'Fira Code', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      fill: #c084fc;
+    }
+    .protocol-tag {
+      font-family: 'Consolas', monospace;
+      font-size: 10px;
+      fill: #c084fc;
+      letter-spacing: 1.5px;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="460" height="215" rx="10" fill="url(#lang-card-bg)" />
+  <rect width="460" height="215" rx="10" fill="url(#lang-dots)" />
+
+  <!-- Outer Border Frame -->
+  <rect x="1" y="1" width="458" height="213" rx="9" fill="none" stroke="#7e22ce" stroke-width="1.5" stroke-opacity="0.7" />
+  <rect x="5" y="5" width="450" height="205" rx="7" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="6 4" />
+
+  <!-- Corner Brackets -->
+  <path d="M 12 24 L 12 12 L 24 12" fill="none" stroke="#d946ef" stroke-width="2" />
+  <path d="M 448 24 L 448 12 L 436 12" fill="none" stroke="#d946ef" stroke-width="2" />
+  <path d="M 12 191 L 12 203 L 24 203" fill="none" stroke="#d946ef" stroke-width="2" />
+  <path d="M 448 191 L 448 203 L 436 203" fill="none" stroke="#d946ef" stroke-width="2" />
+
+  <!-- Header Section -->
+  <g transform="translate(24, 32)">
+    <polygon points="0,-8 7,0 0,8 -7,0" fill="#a855f7" filter="url(#lang-glow)" />
+    <circle cx="0" cy="0" r="1.5" fill="#ffffff" />
+    
+    <text x="16" y="4" class="title" filter="url(#lang-glow)">TOP ARSENAL</text>
+    <text x="390" y="4" class="protocol-tag" text-anchor="end">// LANGUAGES</text>
+    <line x1="0" y1="12" x2="412" y2="12" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4" />
+  </g>
+
+  <!-- Languages Progress Bars -->
+  <g transform="translate(24, 60)">
+    <!-- Python -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="8" class="lang-name">Python (AI / FastAPI / ML)</text>
+      <text x="412" y="8" class="lang-pct" text-anchor="end">45%</text>
+      <!-- Bar Track -->
+      <rect x="0" y="14" width="412" height="6" rx="3" fill="#1e0b36" />
+      <!-- Bar Progress -->
+      <rect x="0" y="14" width="185" height="6" rx="3" fill="url(#python-grad)" filter="url(#lang-glow)" />
+    </g>
+
+    <!-- TypeScript / JavaScript -->
+    <g transform="translate(0, 32)">
+      <text x="0" y="8" class="lang-name">TypeScript / JavaScript (React / Next.js)</text>
+      <text x="412" y="8" class="lang-pct" text-anchor="end">35%</text>
+      <!-- Bar Track -->
+      <rect x="0" y="14" width="412" height="6" rx="3" fill="#1e0b36" />
+      <!-- Bar Progress -->
+      <rect x="0" y="14" width="144" height="6" rx="3" fill="url(#ts-grad)" />
+    </g>
+
+    <!-- HTML / CSS / Tailwind -->
+    <g transform="translate(0, 64)">
+      <text x="0" y="8" class="lang-name">HTML5 / CSS3 / Tailwind</text>
+      <text x="412" y="8" class="lang-pct" text-anchor="end">12%</text>
+      <!-- Bar Track -->
+      <rect x="0" y="14" width="412" height="6" rx="3" fill="#1e0b36" />
+      <!-- Bar Progress -->
+      <rect x="0" y="14" width="50" height="6" rx="3" fill="url(#web-grad)" />
+    </g>
+
+    <!-- C++ / SQL -->
+    <g transform="translate(0, 96)">
+      <text x="0" y="8" class="lang-name">C++ / SQL</text>
+      <text x="412" y="8" class="lang-pct" text-anchor="end">8%</text>
+      <!-- Bar Track -->
+      <rect x="0" y="14" width="412" height="6" rx="3" fill="#1e0b36" />
+      <!-- Bar Progress -->
+      <rect x="0" y="14" width="33" height="6" rx="3" fill="url(#js-grad)" />
+    </g>
+  </g>
+</svg>

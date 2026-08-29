@@ -179,23 +179,19 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
 
 <div align="center">
 
-  <table border="0">
+  <table border="0" width="100%">
     <tr>
-      <td align="center">
-        <a href="https://github.com/AyushKhatai">
-          <img src="https://github-readme-stats.vercel.app/api?username=AyushKhatai&show_icons=true&theme=tokyonight&bg_color=090410&title_color=d946ef&text_color=e9d5ff&icon_color=a855f7&border_color=7e22ce&border_radius=10&include_all_commits=true&count_private=true" alt="Ayush's GitHub Stats" />
-        </a>
+      <td width="50%" align="center" valign="middle">
+        <img src="./github_stats.svg" alt="Ayush's Combat Stats" width="100%" />
       </td>
-      <td align="center">
-        <a href="https://github.com/AyushKhatai">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=AyushKhatai&theme=dark&background=090410&fire=d946ef&ring=a855f7&currStreakNum=e9d5ff&currStreakLabel=c084fc&stroke=7e22ce&sideNums=e9d5ff&sideLabels=c084fc&dates=a855f7&border_radius=10" alt="Ayush's Streak Stats" />
-        </a>
+      <td width="50%" align="center" valign="middle">
+        <img src="./languages_card.svg" alt="Top Arsenal Languages" width="100%" />
       </td>
     </tr>
     <tr>
-      <td colspan="2" align="center">
+      <td colspan="2" align="center" valign="middle">
         <a href="https://github.com/AyushKhatai">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushKhatai&layout=compact&theme=tokyonight&bg_color=090410&title_color=d946ef&text_color=e9d5ff&icon_color=a855f7&border_color=7e22ce&border_radius=10" alt="Top Languages" />
+          <img src="https://streak-stats.demolab.com/?user=AyushKhatai&theme=tokyonight&background=090410&fire=d946ef&ring=a855f7&currStreakNum=e9d5ff&currStreakLabel=c084fc&stroke=7e22ce&sideNums=e9d5ff&sideLabels=c084fc&dates=a855f7&border_radius=10" alt="Ayush's Streak Stats" width="95%" />
         </a>
       </td>
     </tr>
