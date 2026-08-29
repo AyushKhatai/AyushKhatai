@@ -72,7 +72,19 @@ I build practical, intelligent products that turn complex workflows into clear, 
 
 ---
 
-## ⚔️ Tech Arsenal & Loadout
+## 📈 Contribution Activity Graph
+
+<div align="center">
+  <a href="https://github.com/AyushKhatai">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=AyushKhatai&bg_color=090410&color=d946ef&line=a855f7&point=e879f9&area=true&area_color=7e22ce&hide_border=false&border=7e22ce&custom_title=Ayush%20Khatai's%20Contribution%20Graph" width="100%" alt="Ayush's Contribution Activity Graph" />
+  </a>
+</div>
+
+<br/>
+
+---
+
+## ⚡ Tech Stack & Loadout
 
 <div align="center">
 
@@ -175,7 +187,7 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
 
 ---
 
-## 📊 Radiant Combat Metrics & Contribution Graph
+## 📊 Radiant Combat Metrics & Heatmap
 
 <div align="center">
 
@@ -201,7 +213,7 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
   <!-- Live GitHub Contribution Heatmap Graph (Reyna Purple #a855f7) -->
   <h3>🔮 Activity & Contribution Heatmap</h3>
   <a href="https://github.com/AyushKhatai">
-    <img src="https://ghchart.rshah.org/a855f7/AyushKhatai" alt="Ayush's GitHub Contribution Graph" width="100%" />
+    <img src="https://ghchart.rshah.org/a855f7/AyushKhatai" alt="Ayush's GitHub Contribution Heatmap" width="100%" />
   </a>
 
 </div>
