@@ -70,13 +70,6 @@ I build practical, intelligent products that turn complex workflows into clear, 
 
 <br/>
 
-<!-- Contribution Activity Graph (Matching the Reference Line Graph) -->
-<div align="center">
-  <img src="./activity_graph.svg" alt="Ayush Khatai's Contribution Graph" width="100%" />
-</div>
-
-<br/>
-
 ---
 
 ## ⚡ Tech Stack
@@ -182,7 +175,7 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
 
 ---
 
-## 📊 Radiant Combat Metrics & Heatmap
+## 📊 Radiant Combat Metrics & Activity
 
 <div align="center">
 
@@ -205,11 +198,8 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
 
   <br/><br/>
 
-  <!-- Live GitHub Contribution Heatmap Graph (Reyna Purple #a855f7) -->
-  <h3>🔮 Activity & Contribution Heatmap</h3>
-  <a href="https://github.com/AyushKhatai">
-    <img src="https://ghchart.rshah.org/a855f7/AyushKhatai" alt="Ayush's GitHub Contribution Heatmap" width="100%" />
-  </a>
+  <!-- Contribution Activity Line Graph -->
+  <img src="./activity_graph.svg" alt="Ayush Khatai's Contribution Graph" width="100%" />
 
 </div>
 
