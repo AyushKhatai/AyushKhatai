@@ -175,10 +175,11 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
 
 ---
 
-## 📊 Radiant Combat Metrics & Records
+## 📊 Radiant Combat Metrics & Contribution Graph
 
 <div align="center">
 
+  <!-- Top 2-Column: Combat Stats & Top Languages -->
   <table border="0" width="100%">
     <tr>
       <td width="50%" align="center" valign="middle">
@@ -188,14 +189,20 @@ A dynamic platform fostering community-driven skill sharing and knowledge exchan
         <img src="./languages_card.svg" alt="Top Arsenal Languages" width="100%" />
       </td>
     </tr>
-    <tr>
-      <td colspan="2" align="center" valign="middle">
-        <a href="https://github.com/AyushKhatai">
-          <img src="https://streak-stats.demolab.com/?user=AyushKhatai&theme=tokyonight&background=090410&fire=d946ef&ring=a855f7&currStreakNum=e9d5ff&currStreakLabel=c084fc&stroke=7e22ce&sideNums=e9d5ff&sideLabels=c084fc&dates=a855f7&border_radius=10" alt="Ayush's Streak Stats" width="95%" />
-        </a>
-      </td>
-    </tr>
   </table>
+
+  <br/>
+
+  <!-- Contribution & Streak Metrics Card -->
+  <img src="./contributions_card.svg" alt="Radiant Contribution & Streak Metrics" width="100%" />
+
+  <br/><br/>
+
+  <!-- Live GitHub Contribution Heatmap Graph (Reyna Purple #a855f7) -->
+  <h3>🔮 Activity & Contribution Heatmap</h3>
+  <a href="https://github.com/AyushKhatai">
+    <img src="https://ghchart.rshah.org/a855f7/AyushKhatai" alt="Ayush's GitHub Contribution Graph" width="100%" />
+  </a>
 
 </div>
 
