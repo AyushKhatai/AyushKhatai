@@ -70,21 +70,16 @@ I build practical, intelligent products that turn complex workflows into clear, 
 
 <br/>
 
----
-
-## 📈 Contribution Activity Graph
-
+<!-- Contribution Activity Graph (Matching the Reference Line Graph) -->
 <div align="center">
-  <a href="https://github.com/AyushKhatai">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=AyushKhatai&bg_color=090410&color=d946ef&line=a855f7&point=e879f9&area=true&area_color=7e22ce&hide_border=false&border=7e22ce&custom_title=Ayush%20Khatai's%20Contribution%20Graph" width="100%" alt="Ayush's Contribution Activity Graph" />
-  </a>
+  <img src="./activity_graph.svg" alt="Ayush Khatai's Contribution Graph" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## ⚡ Tech Stack & Loadout
+## ⚡ Tech Stack
 
 <div align="center">
 
