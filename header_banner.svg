@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07030e" />
+      <stop offset="30%" stop-color="#140624" />
+      <stop offset="70%" stop-color="#1a0830" />
+      <stop offset="100%" stop-color="#080312" />
+    </linearGradient>
+
+    <!-- Glowing Purple Gradient -->
+    <linearGradient id="purple-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+
+    <!-- Neon Text Gradient -->
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#f5d0fe" />
+      <stop offset="70%" stop-color="#e879f9" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="orb-glow-left" cx="20%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#7e22ce" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#07030e" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orb-glow-right" cx="80%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#9333ea" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#07030e" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filter for Neon Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Dot Pattern -->
+    <pattern id="grid-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#a855f7" fill-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      41% { opacity: 0.95; }
+      42% { opacity: 0.6; }
+      43% { opacity: 0.95; }
+      80% { opacity: 0.9; }
+      81% { opacity: 0.4; }
+      82% { opacity: 1; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(1000%); }
+    }
+    .title-text {
+      font-family: 'Segoe UI', 'Trebuchet MS', 'Montserrat', -apple-system, sans-serif;
+      font-weight: 900;
+      letter-spacing: 7px;
+    }
+    .mono-text {
+      font-family: 'Consolas', 'Courier New', 'Fira Code', monospace;
+      letter-spacing: 2px;
+    }
+    .tagline-text {
+      font-family: 'Segoe UI', -apple-system, sans-serif;
+      letter-spacing: 4px;
+      font-weight: 600;
+    }
+    .pulse-dot {
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .flicker-elm {
+      animation: flicker 4s infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" rx="12" />
+
+  <!-- Radial Glow Accents -->
+  <rect width="100%" height="100%" fill="url(#orb-glow-left)" rx="12" />
+  <rect width="100%" height="100%" fill="url(#orb-glow-right)" rx="12" />
+
+  <!-- Background Grid Dots -->
+  <rect width="100%" height="100%" fill="url(#grid-dots)" rx="12" />
+
+  <!-- Outer Border & Glow Frame -->
+  <rect x="1.5" y="1.5" width="897" height="277" rx="11" fill="none" stroke="#7e22ce" stroke-width="1.5" stroke-opacity="0.6" />
+  <rect x="6" y="6" width="888" height="268" rx="8" fill="none" stroke="#a855f7" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="8 6" />
+
+  <!-- Tactical Corner Brackets (Valorant Style) -->
+  <!-- Top Left -->
+  <path d="M 16 36 L 16 16 L 36 16" fill="none" stroke="#d946ef" stroke-width="2.5" />
+  <circle cx="16" cy="16" r="2" fill="#fbbf24" />
+
+  <!-- Top Right -->
+  <path d="M 864 16 L 884 16 L 884 36" fill="none" stroke="#d946ef" stroke-width="2.5" />
+  <circle cx="884" cy="16" r="2" fill="#fbbf24" />
+
+  <!-- Bottom Left -->
+  <path d="M 16 244 L 16 264 L 36 264" fill="none" stroke="#d946ef" stroke-width="2.5" />
+  <circle cx="16" cy="264" r="2" fill="#fbbf24" />
+
+  <!-- Bottom Right -->
+  <path d="M 864 264 L 884 264 L 884 244" fill="none" stroke="#d946ef" stroke-width="2.5" />
+  <circle cx="884" cy="264" r="2" fill="#fbbf24" />
+
+  <!-- Top Tactical Status Bar -->
+  <g transform="translate(36, 32)">
+    <!-- Protocol Tag -->
+    <rect x="0" y="0" width="168" height="20" rx="4" fill="#2e1065" fill-opacity="0.8" stroke="#a855f7" stroke-width="1" />
+    <circle cx="10" cy="10" r="3.5" fill="#d946ef" class="pulse-dot" />
+    <text x="22" y="14" fill="#f5d0fe" font-size="10" class="mono-text" font-weight="bold">REYNA // PROTOCOL</text>
+
+    <!-- Agent Identity Box -->
+    <text x="740" y="14" fill="#c084fc" font-size="10" class="mono-text" text-anchor="end">// AGENT 11: DUELIST</text>
+    <line x1="748" y1="2" x2="748" y2="18" stroke="#d946ef" stroke-width="2" />
+    <text x="828" y="14" fill="#fbbf24" font-size="10" class="mono-text" font-weight="bold">RADIANT</text>
+  </g>
+
+  <!-- Decorative Valorant Soul Diamond Center Left / Right -->
+  <g transform="translate(68, 140) scale(0.9)" class="flicker-elm">
+    <!-- Diamond Shape -->
+    <polygon points="0,-35 25,0 0,35 -25,0" fill="#2e1065" stroke="#d946ef" stroke-width="2" filter="url(#subtle-glow)" fill-opacity="0.7"/>
+    <polygon points="0,-18 13,0 0,18 -13,0" fill="#fbbf24" fill-opacity="0.9" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    <line x1="-35" y1="0" x2="-45" y2="0" stroke="#a855f7" stroke-width="1.5" />
+    <line x1="35" y1="0" x2="45" y2="0" stroke="#a855f7" stroke-width="1.5" />
+  </g>
+
+  <g transform="translate(832, 140) scale(0.9)" class="flicker-elm">
+    <!-- Diamond Shape -->
+    <polygon points="0,-35 25,0 0,35 -25,0" fill="#2e1065" stroke="#d946ef" stroke-width="2" filter="url(#subtle-glow)" fill-opacity="0.7"/>
+    <polygon points="0,-18 13,0 0,18 -13,0" fill="#fbbf24" fill-opacity="0.9" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    <line x1="-35" y1="0" x2="-45" y2="0" stroke="#a855f7" stroke-width="1.5" />
+    <line x1="35" y1="0" x2="45" y2="0" stroke="#a855f7" stroke-width="1.5" />
+  </g>
+
+  <!-- Central Header Text Content -->
+  <g transform="translate(450, 105)" text-anchor="middle">
+    <!-- Sub-header Small Tag -->
+    <text x="0" y="0" fill="#d946ef" font-size="12" class="mono-text" font-weight="700" filter="url(#subtle-glow)">
+      [ INITIATING COMBAT PROFILE ]
+    </text>
+
+    <!-- Main Name / Title -->
+    <text x="0" y="42" fill="url(#text-gradient)" font-size="38" class="title-text" filter="url(#glow)">
+      AYUSH KHATAI
+    </text>
+
+    <!-- Underline Glow Divider -->
+    <path d="M -180 54 L -20 54 L 0 58 L 20 54 L 180 54" stroke="url(#purple-glow)" stroke-width="2.5" fill="none" />
+    <polygon points="-4,58 0,54 4,58 0,62" fill="#fbbf24" />
+
+    <!-- Role / Tagline -->
+    <text x="0" y="78" fill="#e9d5ff" font-size="13" class="tagline-text">
+      FULL-STACK DEVELOPER <tspan fill="#a855f7">✦</tspan> SOFTWARE ENGINEER <tspan fill="#a855f7">✦</tspan> RADIANT CODER
+    </text>
+  </g>
+
+  <!-- Bottom Tactical Bar & Quote -->
+  <g transform="translate(36, 235)">
+    <!-- Quote -->
+    <text x="10" y="16" fill="#c084fc" font-size="11" class="mono-text">
+      <tspan fill="#d946ef" font-weight="bold">REYNA // </tspan>"THEY WILL COWER!"
+    </text>
+
+    <!-- Status Box -->
+    <g transform="translate(680, 0)">
+      <rect x="0" y="0" width="148" height="22" rx="3" fill="#1e0b36" stroke="#7e22ce" stroke-width="1" />
+      <circle cx="14" cy="11" r="3.5" fill="#4ade80" class="pulse-dot" />
+      <text x="26" y="15" fill="#f3e8ff" font-size="9.5" class="mono-text" font-weight="600">EMPRESS: ACTIVE</text>
+      <path d="M 134 6 L 140 11 L 134 16" fill="none" stroke="#fbbf24" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Subtle Geometric Crosshairs -->
+  <g stroke="#a855f7" stroke-width="1" stroke-opacity="0.3">
+    <line x1="120" y1="80" x2="120" y2="90" />
+    <line x1="115" y1="85" x2="125" y2="85" />
+
+    <line x1="780" y1="80" x2="780" y2="90" />
+    <line x1="775" y1="85" x2="785" y2="85" />
+  </g>
+</svg>
